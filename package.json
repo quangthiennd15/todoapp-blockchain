@@ -1,28 +1,33 @@
 {
-  "name": "eth-todo-list",
-  "version": "1.0.0",
-  "description": "Blockchain Todo List ",
-  "main": "truffle-config.js",
-  "directories": {
-    "test": "test"
-  },
+  "name": "ts_todolist_bc",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "lite-server",
-    "test": "echo \"Error: no test specified\" && sexit 1"
-  },
-  "author": "quangthiennd15@gmail.com",
-  "license": "ISC",
-  "devDependencies": {
-    "bootstrap": "4.1.3",
-    "chai": "^4.1.2",
-    "chai-as-promised": "^7.1.1",
-    "chai-bignumber": "^2.0.2",
-    "lite-server": "2.3",
-    "nodemon": "^1.17.3",
-    "truffle": "5.0.2",
-    "truffle-contract": "3.0.6"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "web3": "^0.20.6"
+    "@rainbow-me/rainbowkit": "^1.1.3",
+    "autoprefixer": "^10.4.16",
+    "ethers": "^6.8.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "wagmi": "^1.4.5"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react-swc": "^3.3.2",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
   }
 }
